@@ -11,7 +11,7 @@ def dividir(a, b):
     try:
         return a / b
     except ZeroDivisionError:
-        return 'No se puede dividir para 0'
+        return 'Error: No se puede dividir por cero'
 
 def main():
     num1 = float(input("Ingrese el primer número: "))
