@@ -8,7 +8,10 @@ def multiplicar(a, b):
     return a * b
 
 def dividir(a, b):
-    return a / b
+    try:
+        return a / b
+    except ZeroDivisionError:
+        print('No se puede dividir para 0')
 
 def main():
     num1 = float(input("Ingrese el primer número: "))
@@ -21,4 +24,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
